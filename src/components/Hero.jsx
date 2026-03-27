@@ -16,7 +16,7 @@ const Hero = () => {
         </h1>
 
         <p>
-          Delivering high-quality, government-mandated safety compliance and consumer awareness programs across the core states of Kerala, Tamil Nadu, and Andhra Pradesh.
+          Delivering high-quality, government-mandated safety compliance and consumer awareness programs across the core states of Tamil Nadu,Kerala, and Andhra Pradesh.
         </p>
 
         <button className="hero-btn">

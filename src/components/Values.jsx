@@ -6,18 +6,18 @@ const Values = () => {
   const data = [
     {
       icon: <FaCheckCircle />,
-      title: "Certified Inspection",
-      desc: "High quality safety checks with certified professionals.",
+      title: "Our Mission: Hazard Prevention",
+      desc: "To be one of the foremost Mandatory Inspection firms, operating with a strict protocol for protecting customers from any hazard related to LPG usage through certified inspections and timely intervention.",
     },
     {
       icon: <FaShieldAlt />,
-      title: "Safety First",
-      desc: "Strict LPG safety standards followed in every inspection.",
+      title: "Our Vision: Ethical Safety Practices", 
+      desc: "To be an entrusted firm in fire & safety by establishing a high level of ethical practice in every inspection and working collaboratively with customers to meet all statutory safety objectives.",
     },
     {
       icon: <FaBalanceScale />,
-      title: "Compliance",
-      desc: "Government approved processes and compliance systems.",
+      title: "Our Goals: Compliance & Continuity",
+      desc: "To ensure 100% compliance with OMC safety mandates, achieve a 70% active consumer base through our Dormant Connection Revival Program, and maintain a consistent track record of zero safety incidents in all our operations.",
     },
   ];
 

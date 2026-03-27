@@ -45,11 +45,11 @@
 /* HIGHLIGHT */
 .about-highlight {
   display: inline-block;
-  background: #ffffff;
+  background: #c1c5cc;
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: 500;
-  color: #0b3c6f;
+  color: #353536;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
@@ -80,4 +80,38 @@
   .about h2::after {
     margin: 10px auto 0;
   }
+}
+
+.highlight {
+  color: #0b3c6f;
+  font-weight: 600;
+  background: #bab9b533;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+h3 {
+  color: #0b3c6f;
+  margin-bottom: 10px;
+  font-weight: 600;
+    font-family: math;
+    font-size: 24px;
+}
+
+.about-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  text-align: justify; /* clean alignment */
+}
+
+/* Highlight block */
+.about-highlight {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-left: 4px solid #ffc107;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 14px;
 }

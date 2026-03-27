@@ -39,12 +39,12 @@ const Navbar = () => {
     </div>
 
     {/* Button */}
-    <button 
-  className="contact-btn"
-  onClick={() => window.location.href = "tel:+91942614625"}
->
-  Contact Us
-</button>
+   <button 
+    className="contact-btn"
+    onClick={() => window.location.href = "tel:+91942614625"}
+  >
+    📞
+  </button>
 
     {/* Mobile */}
     <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>

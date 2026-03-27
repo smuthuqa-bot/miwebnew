@@ -4,8 +4,6 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaGlobe,
-  FaFacebookF,
-  FaInstagram,
 } from "react-icons/fa";
 import "./Contact.css";
 
@@ -18,8 +16,7 @@ const Contact = () => {
     const message = e.target[2].value;
 
     const text = `Hello, I want LPG Inspection.%0AName: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
-
-    const whatsappUrl = `https://wa.me/91XXXXXXXXXX?text=${text}`;
+    const whatsappUrl = `https://wa.me/91942614625?text=${text}`;
 
     window.open(whatsappUrl, "_blank");
   };
@@ -28,77 +25,54 @@ const Contact = () => {
     <section className="contact">
       <div className="contact-container">
 
-        {/* HEADER */}
         <div className="contact-header">
-          <h2>Contact Us</h2>
-          <p>Reach out for LPG inspection services</p>
+          <h2>Contact</h2>
+           <p>Immediate WhatsApp Inquiry</p>
         </div>
 
         <div className="contact-grid">
 
           {/* FORM */}
           <form className="contact-form" onSubmit={handleSubmit}>
-            <h3>Quick Enquiry</h3>
+            <input type="text" placeholder="Name" required />
+            <input type="tel" placeholder="Phone" required />
+            <textarea placeholder="Message" rows="2"></textarea>
 
-            <input type="text" placeholder="Your Name" required />
-            <input type="tel" placeholder="Phone Number" required />
-            <textarea placeholder="Your Message" rows="4"></textarea>
-
-            <button type="submit">
-              Get Instant Quote on WhatsApp
-            </button>
+            <button type="submit">WhatsApp</button>
           </form>
 
-          {/* CONTACT INFO */}
+          {/* INFO */}
           <div className="contact-info">
-
-            <h3>Get in Touch</h3>
 
             <div className="info-item">
               <FaMapMarkerAlt />
-              <p>
-                MI Success Inspection Pvt Ltd <br />
-                Near RI Office,Theni
-                625531, Tamil Nadu, India
-              </p>
+              <p>Theni, Tamil Nadu</p>
             </div>
 
             <div className="info-item">
               <FaPhoneAlt />
-              <p>+91 9942614625</p>
+              <p><a href="tel:+91942614625">+91 9942614625 (Managing Director)</a></p>
             </div>
 
             <div className="info-item">
               <FaEnvelope />
-              <p>
-                <a href="mailto:successmilpg@gmail.com">
-                  successmilpg@gmail.com
-                </a>
-              </p>
+              <p><a href="mailto:successmilpg@gmail.com">successmilpg@gmail.com</a></p>
             </div>
 
             <div className="info-item">
               <FaGlobe />
-              <p>
-                <a href="https://www.misuccess.in" target="_blank" rel="noreferrer">
-                  www.misuccess.in
-                </a>
-              </p>
+              <p><a href="https://www.misuccess.in" target="_blank">misuccess.in</a></p>
             </div>
 
-            {/* SOCIAL */}
-            <div className="social-icons">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaInstagram /></a>
+            {/* REGIONAL */}
+            <div className="regional">
+              📍 TamilNadu : Theni (625531) <br /><br /> 📍 Kerala : Palakkadu (678009) <br /><br /> 📍 Andhra Pradesh : chittoor (517125)
             </div>
 
-            {/* MAP */}
-            <div className="map-container">
+            {/* SMALL MAP */}
+            <div className="map-small">
               <iframe
                 src="https://www.google.com/maps?q=Theni&output=embed"
-                width="100%"
-                height="250"
-                style={{ border: 0, borderRadius: "10px" }}
                 loading="lazy"
                 title="map"
               ></iframe>

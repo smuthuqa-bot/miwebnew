@@ -7,24 +7,25 @@ const Operations = () => {
     {
       icon: <FaTasks />,
       title: "Pre-scheduled Assignments",
-      desc: "Efficient scheduling system for timely inspections and delivery.",
+      desc: "Daily meetings to brief field officers on inspection lists, consumer data, and street-wise execution plans for maximized efficiency and targeted LPG safety audit coverage.",
     },
     {
       icon: <FaLaptop />,
       title: "Advanced Digital Reporting",
-      desc: "Real-time reports with accurate digital documentation.",
+      desc: "Utilizing dedicated mobile applications for real-time reporting, mobile number updates, and instant syncing of all mandatory inspection data with OMC systems (SDMS/DBC). This ensures data integrity, fast compliance reporting, and immediate visibility of field operations to OMC partners.",
     },
     {
       icon: <FaUserCheck />,
       title: "Continuous Training",
-      desc: "Regular training programs to maintain high-quality standards.",
+      desc: "Mandatory, continuous training for our certified field officers ensures they maintain the highest technical knowledge and adhere strictly to LPG safety protocols and professional standards.",
     },
   ];
 
   return (
     <section className="operations">
       <div className="operations-container">
-        <h2>Operational Excellence</h2>
+        <h2>Operational Excellence: Our Daily Execution Strategy</h2>
+        <h4>Our operations are designed to ensure rigorous compliance, efficient execution, and real-time reporting for our OMC partners.</h4>
 
         <div className="operations-grid">
           {data.map((item, i) => (
