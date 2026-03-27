@@ -1,0 +1,79 @@
+.operations {
+  padding: 70px 20px;
+  background: #f5f7fa;
+}
+
+.operations-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* TITLE */
+.operations h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #0b3c6f;
+}
+
+/* GRID */
+.operations-grid {
+  display: grid;
+  gap: 25px;
+}
+
+/* Mobile */
+.operations-grid {
+  grid-template-columns: 1fr;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .operations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .operations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 🔥 CARD */
+.operation-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  text-align: center;
+  border-top: 4px solid #0b3c6f;
+}
+
+/* Hover */
+.operation-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ICON */
+.operation-icon {
+  font-size: 30px;
+  color: #0b3c6f;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.operation-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0b3c6f;
+}
+
+/* DESC */
+.operation-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}

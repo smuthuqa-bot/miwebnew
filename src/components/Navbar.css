@@ -1,0 +1,177 @@
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: #0b3c6f;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Sticky shadow */
+.navbar.sticky {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ================= CONTAINER ================= */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 220px 1fr auto;
+  align-items: center;
+
+  height: 90px; /* ✅ Reduced height */
+}
+
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* reduced gap */
+  color: white;
+}
+
+.logo img {
+  height: 85px;   /* ✅ Bigger logo */
+  object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+/* Main Title */
+.main-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Subtitle */
+.sub-title {
+  font-size: 11px;   /* ✅ small but readable */
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #ddd;
+  position: relative;
+  padding-top: 4px;
+}
+
+/* underline above subtitle */
+.sub-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffc107;
+}
+
+/* ================= MENU ================= */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Hover underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ffc107;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ================= BUTTON ================= */
+.contact-btn {
+  justify-self: end;
+  background: #ffc107;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #e0a800;
+  transform: translateY(-2px);
+}
+
+/* ================= MENU ICON ================= */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .nav-container {
+    grid-template-columns: auto auto;
+    height: 85px;
+  }
+
+  .logo img {
+    height: 55px; /* smaller on mobile */
+  }
+
+  .main-title {
+    font-size: 16px;
+  }
+
+  .sub-title {
+    font-size: 9px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #0b3c6f;
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    display: none;
+    gap: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

@@ -1,0 +1,63 @@
+.regions {
+  padding: 60px 20px;
+  background: #f5f7fa;
+}
+
+.regions-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center; /* center title + content */
+}
+
+/* TITLE */
+.regions h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #0b3c6f;
+}
+
+/* GRID → FLEX CENTER FIX */
+.regions-grid {
+  display: flex;
+  justify-content: center;   /* 🔥 center horizontally */
+  align-items: center;
+}
+
+/* CARD */
+.region-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border-left: 4px solid #0b3c6f;
+
+  max-width: 420px;   /* 🔥 important */
+  width: 100%;        /* responsive */
+}
+
+/* Hover */
+.region-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* ICON */
+.region-icon {
+  font-size: 20px;
+  color: #0b3c6f;
+  margin-top: 4px;
+}
+
+/* TEXT */
+.region-card h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.region-card p {
+  font-size: 13px;
+  color: #666;
+}

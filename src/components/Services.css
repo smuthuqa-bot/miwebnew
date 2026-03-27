@@ -1,0 +1,72 @@
+.services {
+  padding: 70px 20px;
+  background: #ffffff;
+}
+
+.services-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* TITLE */
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #0b3c6f;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  gap: 15px;
+}
+
+/* Mobile */
+.services-grid {
+  grid-template-columns: 1fr;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 🔥 CARD */
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f5f7fa;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ICON */
+.service-icon {
+  color: #0b3c6f;
+  font-size: 16px;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+  background: #0b3c6f;
+  color: white;
+}
+
+.service-card:hover .service-icon {
+  color: #ffc107;
+}
