@@ -41,7 +41,7 @@ const Navbar = () => {
     {/* Button */}
    <button 
     className="contact-btn"
-    onClick={() => window.location.href = "tel:+91942614625"}
+    onClick={() => window.location.href = "tel:+919942614625"}
   >
     📞
   </button>
